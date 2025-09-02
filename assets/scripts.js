@@ -12,8 +12,6 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
-
-
   /* ==========================================================
    * 1. NAVBAR COMPORTAMIENTO
    * ==========================================================*/
@@ -44,19 +42,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-
-
-
-
   /* ==========================================================
    * 2. PLAN DE ESTUDIOS (solo si #planGrid existe)
    * ==========================================================*/
   const grid = document.getElementById('planGrid');
   if (!grid) return;  // estamos en otra página
-
-
-
 
 
 /* ===== Modal introductorio (se muestra SIEMPRE) ========== */
@@ -89,11 +79,6 @@ window.addEventListener('DOMContentLoaded', () => {
   /* si se cierra el modal, pausa el clip */
   introModalEl.addEventListener('hidden.bs.modal',
     () => introModalEl.querySelectorAll('video').forEach(v => v.pause()));
-
-
-
-
-
 
 
   /* ── subtítulo dinámico ─────────────────────── */
@@ -216,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------- Cargar plan ----------- */
-  axios.get('../../assets/data/plan_de_estudios.json')
+  axios.get('/assets/data/plan_de_estudios.json')
     .then(res => {
       res.data.semesters.forEach(sem => {
         const col = document.createElement('div'); col.className = 'sem-col';
@@ -354,21 +339,8 @@ window.addEventListener('DOMContentLoaded', () => {
   switchView(); // inicial
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', async () => {
-  const dataUrl   = '../../assets/data/logros.json';
+  const dataUrl   = '/assets/data/logros.json';
   const thumbsBox = document.getElementById('thumbs');
   const inner     = document.querySelector('#carouselLogros .carousel-inner');
   const response  = await fetch(dataUrl);
@@ -417,22 +389,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       .classList.add('active');
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* === Admisiones: contador de años y donut =============================== */
