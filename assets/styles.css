@@ -1,7 +1,7 @@
 /* ── NAVBAR ESTILO IBERO ───────────────────────────────────────────────── */
 
 #mainNav{
-  background:#EF402C !important;        /* rojo fijo                          */
+  background:#E00034 !important;        /* rojo fijo                          */
   padding-top:1.25rem;
   padding-bottom:1.25rem;
 }
@@ -109,19 +109,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ── HERO genérico para secciones internas ──────────────────────────────*/
 #masthead{
   position: relative;
@@ -129,7 +116,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("../assets/img/hero/vida_universitaria.jpg") center/cover no-repeat;
+  background: url("/assets/img/hero/vida_universitaria.jpg") center/cover no-repeat;
   color:#fff;
 }
 .masthead-overlay{
@@ -140,16 +127,11 @@
 .masthead-subheading{font-size:1rem;font-weight:300;}
 
 .barra-roja{
-  background:#EF402C;
+  background:#E00034;
   text-align:center;
   padding:.5rem 0;
 }
 .scroll-btn{font-weight:600;letter-spacing:.05em;}
-
-
-
-
-
 
 
 /* ── Plan de estudios (grid horizontal) ─────────────────────────────────*/
@@ -231,12 +213,8 @@
   width:100%;
   max-width:850px;            /* misma anchura aprox que el grid */
   height:3px;
-  background:#EF402C;
+  background:#E00034;
 }
-
-
-
-
 
 
 
@@ -374,15 +352,9 @@
 
 /* botón primario rojo y secundario (si quisieras más botones) */
 .hero-card .btn-danger{
-  --bs-btn-bg:#e63946;
-  --bs-btn-border-color:#e63946;
+  --bs-btn-bg:#E00034;
+  --bs-btn-border-color:#E00034;
 }
-
-
-
-
-
-
 
 /* ── Selector de vista: estilo + caret ────────────────────────── */
 #viewSelector select.form-select{
@@ -406,7 +378,7 @@
   width:100%;
   max-width:850px;
   height:3px;
-  background:#EF402C;
+  background:#E00034;
 
   /* deja 2 rem debajo para separar del texto/ grid */
   margin:1rem auto 2rem;   /* top 1 rem, bottom 2 rem */
@@ -419,17 +391,9 @@
   border:none;
 }
 
-
-
-
-
-
-
-
-
 /* ===== Estilos calculadora ===== */
 .course-card.cursado{
-  border:4px solid #ef402c;          /* rojo Bootstrap */
+  border:4px solid #E00034;          /* rojo Bootstrap */
   position:relative;
 }
 .course-card.porcursar{
@@ -462,7 +426,7 @@
   max-width:820px;
   margin:1rem auto 2rem;
   padding:0rem 1rem;
-  /*border-top:2px solid #EF402C;*/
+  /*border-top:2px solid #E00034;*/
 }
 
 #brushClear{
@@ -473,12 +437,6 @@
   background:#6c757d;
   color:#fff;
 }
-
-
-
-
-
-
 
 /* ── Botón de copiar en el modal ───────────────────────── */
 .btn-copy{
@@ -494,14 +452,6 @@
   font-size: 1rem;   /* 16 px */
   line-height: 1;
 }
-
-
-
-
-
-
-
-
 
 /* --- Dimensiones generales --- */
 #galeria-logros {
@@ -576,19 +526,9 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* === TIMELINE APRENDER HACIENDO ======================================= */
 .timeline{
-  border-top:3px solid #ef402c;
+  border-top:3px solid #E00034;
   position:relative;
 }
 .timeline .step{
@@ -597,7 +537,7 @@
 .timeline .circle{
   width:52px;height:52px;
   border-radius:50%;
-  background:#ef402c;
+  background:#E00034;
   color:#fff;
   display:flex;
   align-items:center;
@@ -634,7 +574,7 @@
 .pin{
   position:absolute;
   width:14px;height:14px;
-  background:#ef402c;border-radius:50%;
+  background:#E00034;border-radius:50%;
   border:2px solid #fff;
 }
 .pin-es{ top:55%; left:47%; }   /* ajusta coordenadas según el SVG */
@@ -642,7 +582,7 @@
 
 /* === CTA final background animado ==================================== */
 .cta-final{
-  background:linear-gradient(135deg,#ef402c 0%,#750d00 100%);
+  background:linear-gradient(135deg,#E00034 0%,#750d00 100%);
   position:relative;
   overflow:hidden;
 }
@@ -680,7 +620,7 @@
   left:50%; top:0;
   transform:translateX(-50%);
   width:4px; height:100%;
-  background:#ef402c;
+  background:#E00034;
 }
 @media (min-width:768px){
   .roadmap::before{
@@ -692,7 +632,7 @@
 .badge-phase{
   width:74px; height:74px;
   border-radius:50%;
-  background:#ef402c;
+  background:#E00034;
   color:#fff; font-size:1.75rem;
   display:flex; align-items:center; justify-content:center;
   margin-inline:auto;
@@ -721,7 +661,7 @@
 }
 .progress-ibero .progress-bar {
   width: 0;                       /* animación inicia en 0 */
-  background-image: linear-gradient(90deg,#ef402c,#ba0d0d);
+  background-image: linear-gradient(90deg,#E00034,#ba0d0d);
   transition: width 1s ease-out;
   border-radius: 50px;
 }
@@ -779,7 +719,7 @@
 .pillar-comp{ background:#004aad; }
 .pillar-elec{ background:#02b25f; }
 .pillar-mec { background:#f5d449; color:#000; }
-.pillar-ctrl{ background:#ef402c; }
+.pillar-ctrl{ background:#E00034; }
 
 /* Sub-esferas */
 .sub-sphere{
