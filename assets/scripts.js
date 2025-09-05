@@ -201,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------- Cargar plan ----------- */
-  axios.get('/assets/data/plan_de_estudios.json')
+  axios.get('/assets/data/plan_de_estudios2.json')
     .then(res => {
       res.data.semesters.forEach(sem => {
         const col = document.createElement('div'); col.className = 'sem-col';
