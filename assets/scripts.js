@@ -660,16 +660,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-

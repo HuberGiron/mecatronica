@@ -1,3 +1,10 @@
+/* captions visibles y legibles también en móvil */
+.btn-ibero{ background:#E00034; border-color:#E00034; color:#fff; }
+.btn-ibero:hover,.btn-ibero:focus{ background:#c9002e; border-color:#c9002e; color:#fff; }
+#iberoNewsSplit .img-cover{ width:100%; height:360px; object-fit:cover; border-radius:.75rem; }
+@media (max-width:576px){ #iberoNewsSplit .img-cover{ height:220px; } }
+#iberoNewsSplit .carousel-item{ padding:.75rem 0; }
+
 /* ── NAVBAR ESTILO IBERO ───────────────────────────────────────────────── */
 
 #mainNav{
