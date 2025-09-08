@@ -354,9 +354,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     item.innerHTML = `
       <img src="${l.img}" class="d-block w-100 object-fit-cover" alt="${l.title}">
       <div class="carousel-caption text-start">
-        <h5 class="fw-semibold">${l.title}</h5>
-        <p>${l.desc}</p>
       </div>`;
+    // item.innerHTML = `
+    //   <img src="${l.img}" class="d-block w-100 object-fit-cover" alt="${l.title}">
+    //   <div class="carousel-caption text-start">
+    //     <h5 class="fw-semibold">${l.title}</h5>
+    //     <p>${l.desc}</p>
+    //   </div>`;
     inner.appendChild(item);
 
     /* --- Miniatura --- */
