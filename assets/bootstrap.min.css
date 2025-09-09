@@ -3252,20 +3252,31 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
+
+/* Tu override: después de bootstrap.min.css */
 .btn-outline-danger {
-  --bs-btn-color: #dc3545;
+  /* estado normal (habilitado) */
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #dc3545;               /* rojo base */
   --bs-btn-border-color: #dc3545;
+  --bs-btn-border-width: 2.5px;       /* borde más grueso en todos los estados */
+
+  /* hover */
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #dc3545;
-  --bs-btn-hover-border-color: #dc3545;
-  --bs-btn-focus-shadow-rgb: 220, 53, 69;
+  --bs-btn-hover-bg: #bb2d3b;         /* rojo más fuerte al pasar el mouse */
+  --bs-btn-hover-border-color: #bb2d3b;
+
+  /* active (mousedown/click) */
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #dc3545;
-  --bs-btn-active-border-color: #dc3545;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #dc3545;
+  --bs-btn-active-bg: #a52834;        /* aún más oscuro al hacer clic */
+  --bs-btn-active-border-color: #a52834;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+
+  /* deshabilitado (lo dejas como tenías) */
+  --bs-btn-disabled-color: #d2d0d0;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #dc3545;
+  --bs-btn-disabled-border-color: #c1b9b9;
+
   --bs-gradient: none;
 }
 

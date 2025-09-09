@@ -221,6 +221,34 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => { console.error(err); grid.innerHTML = '<div class="alert alert-danger">No se pudo cargar el plan de estudios</div>'; });
 
+  // Navegación horizontal (solo escritorio)
+  const btnPrev = document.getElementById('planPrev');
+  const btnNext = document.getElementById('planNext');
+  btnPrev.disabled = true;   // al principio estás al inicio
+  btnNext.disabled = false;  // permite avanzar desde YA
+  if (btnPrev && btnNext && grid) {
+    const STEP = Math.round(grid.clientWidth * 0.8); // ~una “página” menos un margen
+
+    const go = (delta) => grid.scrollBy({ left: delta, behavior: 'smooth' });
+
+    btnPrev.addEventListener('click', () => go(-STEP));
+    btnNext.addEventListener('click', () => go(+STEP));
+
+    // (Opcional) deshabilitar cuando estés en los extremos:
+    const updateArrows = () => {
+      const atStart = grid.scrollLeft <= 0;
+      const atEnd   = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1;
+      btnPrev.disabled = atStart;
+      btnNext.disabled = atEnd;
+    };
+    grid.addEventListener('scroll', updateArrows, { passive: true });
+    window.addEventListener('resize', updateArrows);
+    // Llamada inicial (tras poblar el grid)
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => updateArrows());
+    });
+
+  }
 
  /* ---------------- Brochas ---------------- */
   if(btnDone && btnTodo){
