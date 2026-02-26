@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mecatrónica IBERO</title>
+  <title>Mecatrónica IBERO · Grupos estudiantiles</title>
   <link rel="icon" type="image/png" href="/assets/favicon.ico">
 
   <!-- Bootstrap CSS -->
@@ -17,6 +17,102 @@
   <!-- Estilos propios -->
   <link href="/assets/styles.css" rel="stylesheet">
 
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #8b1e3f 0%, #5f1029 100%);
+      color: #fff;
+      padding: 3.5rem 1rem 2.5rem;
+    }
+
+    .page-hero h1 {
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    .page-hero p {
+      margin-bottom: 0;
+      opacity: .95;
+      max-width: 900px;
+    }
+
+    .group-card {
+      border: 0;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      height: 100%;
+      background: #fff;
+    }
+
+    .group-card .card-body {
+      padding: 1.25rem 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .group-card .card-title {
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    .group-card .card-text {
+      color: #4b5563;
+      line-height: 1.45;
+    }
+
+    .media-frame {
+      background: #f3f4f6;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .placeholder-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge-pill {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 600;
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      font-size: .8rem;
+      display: inline-block;
+      margin-bottom: .65rem;
+    }
+
+    .section-wrap {
+      background: #f8fafc;
+    }
+
+    .youtube-note {
+      font-size: .9rem;
+      color: #6b7280;
+    }
+
+    /* Botón de acceso a cada grupo */
+    .group-action {
+      margin-top: auto;
+      padding-top: .9rem;
+    }
+
+    .group-link-btn {
+      border-radius: .7rem;
+      font-weight: 600;
+      padding: .55rem .9rem;
+    }
+
+    .group-link-btn.is-disabled,
+    .group-link-btn.disabled {
+      pointer-events: none;
+      opacity: .75;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -37,10 +133,12 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
 
-            <!-- Admisiones-->
-          <li class="nav-item"><a class="nav-link fw-bold" href="https://licenciaturas.ibero.mx/ingenieria-en-mecatronica-y-sistemas-ciberfisicos">Admisiones</a></li>
+          <!-- Admisiones-->
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="https://licenciaturas.ibero.mx/ingenieria-en-mecatronica-y-sistemas-ciberfisicos">Admisiones</a>
+          </li>
 
-            <!-- Vida universitaria-->
+          <!-- Vida universitaria-->
           <li class="nav-item dropdown">
             <a class="nav-link fw-bold dropdown-toggle" href="#" id="vidaDropdown"
                role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,13 +146,13 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="vidaDropdown">
               <li><a class="dropdown-item" href="/vida_universitaria/plan_estudios.html">Plan de estudios</a></li>
-              <li><a class="dropdown-item" href="/vida_universitaria/grupos_estudiantiles.html">Grupos estudiantiles</a></li>
+              <li><a class="dropdown-item active" href="/vida_universitaria/grupos_estudiantiles.html">Grupos estudiantiles</a></li>
               <!-- <li><a class="dropdown-item" href="#">Sociedad de alumnos</a></li> -->
               <!-- <li><a class="dropdown-item" href="#">Logros estudiantiles</a></li> -->
             </ul>
           </li>
 
-            <!-- Academia-->
+          <!-- Academia-->
           <li class="nav-item dropdown">
             <a class="nav-link fw-bold dropdown-toggle" href="#" id="academiaDropdown"
                role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,7 +166,7 @@
             </ul>
           </li>
 
-            <!-- Instalaciones y Laboratorios-->
+          <!-- Instalaciones y Laboratorios-->
           <li class="nav-item dropdown">
             <a class="nav-link fw-bold dropdown-toggle" href="#" id="instalacionesDropdown"
                role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,70 +179,162 @@
             </ul>
           </li>
 
-            <!-- Vinculación-->
+          <!-- Vinculación-->
           <!-- <li class="nav-item"><a class="nav-link fw-bold" href="empleabilidad.html">Empleabilidad</a></li> -->
-        
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- aquí vendrá el resto del contenido -->
-  <!-- Galería de logros estudiantiles -->
-  <!-- Galería de logros estudiantiles -->
-  <section id="galeria-logros" class="container-fluid px-0">
-    <div class="row g-0">
-      <!-- Carrusel principal -->
-      <div class="col-lg-9">
-        <div id="carouselLogros" class="carousel slide h-100">
-          <div class="carousel-inner h-100"><!-- Slides vía JS --></div>
+  <!-- Sección principal de grupos -->
+  <main class="section-wrap py-3">
+    <div class="container">
 
-          <!-- Controles -->
-          <button class="carousel-control-prev" type="button"
-                  data-bs-target="#carouselLogros" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button"
-                  data-bs-target="#carouselLogros" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+      <h1 class="section-heading text-uppercase">Grupos estudiantiles</h1>
+
+      <div class="row g-4">
+
+        <!-- Club de Drones (YouTube) -->
+        <div class="col-12 col-xl-6">
+          <article class="card group-card">
+            <div class="ratio ratio-16x9 media-frame">
+              <iframe
+                src="https://www.youtube.com/embed/1vwL5-b9Fek"
+                title="Club de Drones - Mecatrónica IBERO"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="card-body">
+              <!-- <span class="badge-pill">Video</span> -->
+              <h2 class="h4 card-title">Club de Drones</h2>
+              <p class="card-text">
+                Espacio orientado al diseño, construcción, programación y operación de drones para
+                proyectos académicos, prototipos, competencias y aplicaciones en sistemas ciberfísicos.
+              </p>
+
+              <div class="group-action">
+                <!-- Cambia data-link-enabled a "false" para deshabilitar fácilmente -->
+                <a
+                  href="/vida_universitaria/grupos/club_drones.html"
+                  class="btn btn-outline-dark w-100 group-link-btn"
+                  data-link-enabled="false"
+                  data-enabled-text="Ir a la página del grupo"
+                  data-disabled-text="Página próximamente">
+                  Ir a la página del grupo
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
 
-      <!-- Columna de miniaturas -->
-      <div class="col-lg-3 p-2 bg-light d-flex flex-column right-panel">
-        <!-- Encabezado fijo -->
-        <header class="thumbs-header">
-          <h3 class="text-uppercase fw-bold mb-2">
-            Proyectos de la <br>coordinación IMSC
-          </h3>
+        <!-- Club de Cohetería -->
+        <div class="col-12 col-md-6 col-xl-6">
+          <article class="card group-card">
+            <div class="ratio ratio-16x9 media-frame">
+              <!-- Imagen de ejemplo temporal -->
+              <img
+                src="/assets/img/grupos/7.jpg"
+                alt="Club de Cohetería (imagen de ejemplo)"
+                class="placeholder-img">
+            </div>
+            <div class="card-body">
+              <!-- <span class="badge-pill">Foto (temporal)</span> -->
+              <h2 class="h4 card-title">Club de Cohetería</h2>
+              <p class="card-text">
+                Grupo enfocado en el desarrollo de proyectos relacionados con cohetería experimental,
+                diseño de estructuras, integración de sistemas, pruebas y aprendizaje aplicado en ingeniería.
+              </p>
 
-          <!-- Frase jesuita -->
-          <p class="small text-muted mb-0 fst-italic">
-            “El amor se ha de poner<br>
-            más en las obras que<br>
-            en las palabras.”<br>
-            — San Ignacio de Loyola —
-          </p>
-        </header>
+              <div class="group-action">
+                <!-- Déjalo en false mientras no exista la página -->
+                <a
+                  href="/vida_universitaria/grupos/club_coheteria.html"
+                  class="btn btn-outline-dark w-100 group-link-btn"
+                  data-link-enabled="false"
+                  data-enabled-text="Ir a la página del grupo"
+                  data-disabled-text="Página próximamente">
+                  Ir a la página del grupo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-        <!-- Grid de miniaturas -->
-        <div id="thumbs" class="thumbs-grid flex-grow-1"><!-- se llena vía JS --></div>
+        <!-- Club de Robótica -->
+        <div class="col-12 col-md-6">
+          <article class="card group-card">
+            <div class="ratio ratio-16x9 media-frame">
+              <!-- Imagen de ejemplo temporal -->
+              <img
+                src="/assets/img/grupos/6.jpg"
+                alt="Club de Robótica (imagen de ejemplo)"
+                class="placeholder-img">
+            </div>
+            <div class="card-body">
+              <!-- <span class="badge-pill">Foto (temporal)</span> -->
+              <h2 class="h4 card-title">Club de Robótica</h2>
+              <p class="card-text">
+                Comunidad para diseñar, construir y programar robots, participar en retos y fortalecer
+                habilidades en electrónica, control, mecánica, visión y automatización.
+              </p>
+
+              <div class="group-action">
+                <a
+                  href="/vida_universitaria/grupos/club_robotica.html"
+                  class="btn btn-outline-dark w-100 group-link-btn"
+                  data-link-enabled="false"
+                  data-enabled-text="Ir a la página del grupo"
+                  data-disabled-text="Página próximamente">
+                  Ir a la página del grupo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Rama Estudiantil IEEE -->
+        <div class="col-12 col-md-6">
+          <article class="card group-card">
+            <div class="ratio ratio-16x9 media-frame">
+              <!-- Imagen de ejemplo temporal -->
+              <img
+                src="/assets/img/grupos/3.jpg"
+                alt="Rama Estudiantil IEEE (imagen de ejemplo)"
+                class="placeholder-img">
+            </div>
+            <div class="card-body">
+              <!-- <span class="badge-pill">Foto (temporal)</span> -->
+              <h2 class="h4 card-title">Rama Estudiantil IEEE</h2>
+              <p class="card-text">
+                Espacio de vinculación académica y profesional para impulsar actividades, talleres,
+                conferencias, networking y proyectos alineados con las áreas de ingeniería y tecnología.
+              </p>
+
+              <div class="group-action">
+                <a
+                  href="/vida_universitaria/grupos/rama_ieee.html"
+                  class="btn btn-outline-dark w-100 group-link-btn"
+                  data-link-enabled="false"
+                  data-enabled-text="Ir a la página del grupo"
+                  data-disabled-text="Página próximamente">
+                  Ir a la página del grupo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Footer-->
   <footer class="py-4 bg-dark text-white-50">
-  <div class="container text-center">
-    <small>&copy; 2025 Mecatrónica IBERO · <a href="#" class="link-light">Aviso de privacidad</a></small>
-  </div>
+    <div class="container text-center">
+      <small>&copy; 2025 Mecatrónica IBERO · <a href="#" class="link-light">Aviso de privacidad</a></small>
+    </div>
   </footer>
-
-  <!-- Incluye el script después de Bootstrap -->
-  <script src="/assets/data/logros.json"></script>
 
   <!-- Bootstrap bundle (Popper incluido) -->
   <script
@@ -152,7 +342,36 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 
-  <!-- Lógica propia -->
-  <script src="/assets/scripts.js"></script>
+  <script>
+    // Activa/desactiva botones de grupos según data-link-enabled="true|false"
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".group-link-btn");
+
+      buttons.forEach((btn) => {
+        const enabled = (btn.dataset.linkEnabled || "false").toLowerCase() === "true";
+        const enabledText = btn.dataset.enabledText || "Ir a la página del grupo";
+        const disabledText = btn.dataset.disabledText || "Página próximamente";
+
+        if (enabled) {
+          btn.textContent = enabledText;
+          btn.classList.remove("is-disabled", "disabled", "btn-outline-secondary");
+          btn.classList.add("btn-outline-dark");
+          btn.removeAttribute("aria-disabled");
+          btn.removeAttribute("tabindex");
+        } else {
+          btn.textContent = disabledText;
+          btn.classList.add("is-disabled", "disabled", "btn-outline-secondary");
+          btn.classList.remove("btn-outline-dark");
+          btn.setAttribute("aria-disabled", "true");
+          btn.setAttribute("tabindex", "-1");
+
+          // Evita navegación aunque tenga href definido
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
