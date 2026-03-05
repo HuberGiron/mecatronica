@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mecatronica-ibero.mx/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/vida_universitaria/plan_estudios.html</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/vida_universitaria/grupos_estudiantiles.html</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/academia/academicos.html</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/huber-giron/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/control/mqtt-mosquitto/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/dxf/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/stl/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/control/mqtt-camera/</loc>
+  </url>
+  <url>
+    <loc>https://mecatronica-ibero.mx/teachable/</loc>
+  </url>
+</urlset>
