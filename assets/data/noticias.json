@@ -1,10 +1,17 @@
 [
+    {
+    "titulo": "Estudiantes IBERO triunfan en iniciativa Intel con proyecto de IA que optimiza transporte público en CDMX",
+    "fecha": "Jue, 26 Feb 2026",
+    "resumen": "Estudiantes de la IBERO ganaron en la iniciativa AccMxIA de Intel con un proyecto de IA que integra cámaras, sensores y GPS para anticipar demanda, reducir tiempos de espera y optimizar rutas del transporte público en la CDMX.",
+    "url": "https://prensa.ibero.mx/es-MX/nota/estudiantes-ibero-triunfan-en-iniciativa-intel-con-proyecto-de-ia-que-optimiza-transporte-publico-en-cdmx",
+    "imagen": "https://prensaadmin.ibero.mx/uploads/optimizacion_del_transporte_publico_ibero_intel_28ce3b1ce7.jpg"
+  },
   {
-    "titulo": "La IA se está utilizando como motor de búsqueda con esteroides, crítica docente IBERO",
-    "fecha": "Jue, 12 Feb 2026",
-    "resumen": "Docente IBERO advierte sobre el uso acrítico de la IA y llama a fortalecer pensamiento crítico y alfabetización digital.",
-    "url": "https://prensa.ibero.mx/es-MX/nota/la-ia-se-esta-utilizando-como-motor-de-busqueda-con-esteroides-critica-docente-ibero",
-    "imagen": "https://prensaadmin.ibero.mx/uploads/inteligencia_artificial_gerardo_herrera_54a6eda23d.png"
+    "titulo": "#8M Desde la política pública debe impulsarse la inclusión de mujeres en ingeniería y ciencia: académica IBERO",
+    "fecha": "Lun, 2 Mar 2026",
+    "resumen": "Académica egresada del Doctorado en Ciencias de la Ingeniería de la IBERO llamó a fortalecer, desde la política pública, la inclusión de mujeres en STEM mediante estrategias estructurales de acceso, permanencia y desarrollo profesional.",
+    "url": "https://prensa.ibero.mx/es-MX/nota/desde-la-politica-publica-debe-impulsarse-la-inclusion-de-mujeres-en-ingenieria-y-ciencia-academica-ibero",
+    "imagen": "https://prensaadmin.ibero.mx/uploads/ma_eugenia_mena_0d58bf420d.jpeg"
   },
   {
     "titulo": "IBERO se consolida en la iniciativa 'Acelerando México con IA' de Intel",
@@ -19,20 +26,6 @@
     "resumen": "Reflexión sobre curiosidad, aprendizaje y herramientas (incluida la IA) para animar vocaciones científicas en jóvenes.",
     "url": "https://prensa.ibero.mx/es-MX/nota/la-ia-reflexiona-lo-que-me-habria-gustado-saber-a-los-15-para-atreverme-a-hacer-ciencia",
     "imagen": "https://prensaadmin.ibero.mx/uploads/nina_cientifica_fdc76031d1.png"
-  },
-  {
-    "titulo": "Opinión. El litio: la promesa de energía limpia que reproduce viejas desigualdades",
-    "fecha": "Lun, 26 Ene 2026",
-    "resumen": "Análisis sobre la transición energética, almacenamiento, geopolítica del litio y los costos sociales/ambientales asociados.",
-    "url": "https://prensa.ibero.mx/es-MX/nota/opinion-el-litio-la-promesa-de-energia-limpia-que-reproduce-viejas-desigualdades",
-    "imagen": "https://prensaadmin.ibero.mx/uploads/litio_desigualdades_5e5b09a9bb.jpg"
-  },
-  {
-    "titulo": "IBERO Coordina Libro Sobre Uso de la Inteligencia Artificial en la Educación; ¡Consúltalo Gratis!",
-    "fecha": "Jue, 27 Nov 2025",
-    "resumen": "La IBERO coordinó un libro sobre el uso de IA en educación y lo habilitó para consulta gratuita.",
-    "url": "https://ibero.mx/prensa/ibero-coordina-libro-sobre-uso-de-la-inteligencia-artificial-en-la-educacion-consultalo-gratis",
-    "imagen": "https://prensa.ibero.mx/2025/images/2025-11-27-ibero-coordina-libro-sobre-uso-de-la-inteligencia-artificial-en-la-educacin-consltalo-gratis/inteligenica_artificial_ibero.jpg"
   },
   {
     "titulo": "Huawei ICT Academy Disponible y Gratuita Para Estudiantes IBERO CDMX",
@@ -56,32 +49,11 @@
     "imagen": "https://prensa.ibero.mx/2025/images/2025-10-27-ibero-busca-capacitar-en-inteligencia-artificial-a-toda-amrica-latina/dr_andres_molano.jpg"
   },
   {
-    "titulo": "Lanza IBERO su Ecosistema de Inteligencia Artificial con Sentido Humanista",
-    "fecha": "Vie, 24 Oct 2025",
-    "resumen": "La IBERO lanzó un ecosistema institucional de IA para docencia, investigación y gestión, con enfoque crítico, ético y social.",
-    "url": "https://ibero.mx/prensa/lanza-ibero-su-ecosistema-de-inteligencia-artificial-con-sentido-humanista",
-    "imagen": "https://prensa.ibero.mx/2025/images/2025-10-24-lanza-ibero-su-ecosistema-de-inteligencia-artificial-con-sentido-humanista/horizonte_ibero_0.jpg"
-  },
-  {
     "titulo": "Estudiante IBERO Impulsa SheLab: Plataforma para Mujeres STEM",
     "fecha": "Jue, 23 Oct 2025",
     "resumen": "SheLab busca impulsar la participación de mujeres en STEM mediante una plataforma surgida como proyecto con base académica en la IBERO.",
     "url": "https://ibero.mx/prensa/estudiante-ibero-impulsa-shelab-plataforma-para-mujeres-stem",
     "imagen": "https://prensa.ibero.mx/2025/images/2025-10-23-estudiante-ibero-impulsa-shelab-plataforma-para-mujeres-stem/renata-badillo2_1.jpg"
-  },
-  {
-    "titulo": "Eli: el Agente de IA que Impulsa el Lenguaje Incluyente en la IBERO",
-    "fecha": "Jue, 16 Oct 2025",
-    "resumen": "Proyecto de agente de IA para promover el lenguaje incluyente y apoyar la comunicación institucional y comunitaria.",
-    "url": "https://ibero.mx/prensa/eli-el-agente-de-ia-que-impulsa-el-lenguaje-incluyente-en-la-ibero",
-    "imagen": "https://prensa.ibero.mx/2025/images/2025-10-16-eli-el-agente-de-ia-que-impulsa-el-lenguaje-incluyente-en-la-ibero/whatsapp_image_2025-10-16_at_12.07.31.jpeg"
-  },
-  {
-    "titulo": "Congreso 'Innovación y Liderazgo para la Transformación Digital Empresarial', un Éxito",
-    "fecha": "Mié, 15 Oct 2025",
-    "resumen": "Congreso sobre transformación digital empresarial con especialistas; se enfatizó liderazgo estratégico y capacidades tecnológicas.",
-    "url": "https://ibero.mx/prensa/congreso-innovacion-y-liderazgo-para-la-transformacion-digital-empresarial-un-exito",
-    "imagen": "https://prensa.ibero.mx/2025/images/2025-10-15-congreso-innovacin-y-liderazgo-para-la-transformacin-digital-empresarial-un-xito/congreso_innovacion.jpg"
   },
   {
     "titulo": "IBERO y LG Fusionan Diseño y Tecnología en Design Week México 2025; Ven al Parque Lincoln y Conoce su Trabajo",
